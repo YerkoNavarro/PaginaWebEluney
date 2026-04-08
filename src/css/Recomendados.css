@@ -1,0 +1,164 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Paleta de colores ajustada */
+:root {
+  --bg-color: #FFFFFF;
+  --card-bg: #F5ECE5;
+  --text-dark: #3E2723;
+  --text-muted: #5D4037;
+  --accent-color: #6D4C41;
+  --accent-hover: #4E342E;
+  --price-color: #8D6E63;
+}
+
+.recomendados-section {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Estilos del Encabezado --- */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  border-bottom: 2px dashed #E0D4C8;
+  padding-bottom: 20px;
+}
+
+.header-text h2 {
+  font-size: 32px;
+  margin: 0 0 8px 0;
+  letter-spacing: -1px;
+  color: var(--text-dark);
+}
+
+.header-text p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.ver-menu {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.ver-menu:hover {
+  color: var(--accent-hover);
+}
+
+/* --- Estilos de la Lista Horizontal (Cambios aquí) --- */
+.cards-grid {
+  display: flex;               /* Cambiado de grid a flex */
+  overflow-x: auto;            /* Permite desplazamiento horizontal */
+  gap: 24px;
+  padding-bottom: 15px;        /* Espacio para la barra de desplazamiento */
+  scroll-behavior: smooth;     /* Desplazamiento suave */
+  -webkit-overflow-scrolling: touch; /* Mejor desplazamiento en móviles */
+}
+
+/* Estilización opcional de la barra de desplazamiento para que se vea mejor */
+.cards-grid::-webkit-scrollbar {
+  height: 8px;
+}
+.cards-grid::-webkit-scrollbar-track {
+  background: #E0D4C8;
+  border-radius: 10px;
+}
+.cards-grid::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
+}
+
+.card {
+  flex: 0 0 280px;            /* No crece, no se encoge, ancho fijo de 280px */
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(62, 39, 35, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tag {
+  align-self: flex-start;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+  flex-grow: 1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--price-color);
+}
+
+/* --- Botón Eliminado (Cambio aquí) --- */
+.add-btn {
+  display: none; /* Esto oculta el botón por completo */
+}
+
+/* --- Responsive para celulares --- */
+@media (max-width: 768px) {
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
