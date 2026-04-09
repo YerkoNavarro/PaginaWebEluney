@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #0f0e0b;
+  background-color: #E0D4C8;
   padding: 0 2rem;
   height: 56px;
   position: sticky;
@@ -14,7 +14,7 @@
 
 /* Logo */
 .navbar__logo {
-  color: #f5d000;
+  color: #4E342E;
   font-style: italic;
   font-weight: 700;
   font-size: 1.4rem;
@@ -35,7 +35,7 @@
 .navbar__link {
   background: none;
   border: none;
-  color: #e0ddd5;
+  color: #000000;
   font-size: 0.95rem;
   cursor: pointer;
   padding: 4px 0;
@@ -47,11 +47,11 @@
 }
 
 .navbar__link:hover {
-  color: #ffffff;
+  color: #e0a205;
 }
 
 .navbar__link--active {
-  color: #ffffff;
+  color: #e0a205;
   font-weight: 500;
 }
 
@@ -70,8 +70,8 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  background-color: #f5d000;
-  color: #0f0e0b;
+  background-color: #4E342E;
+  color: #ffffff;
   padding: 8px 18px;
   border-radius: 999px;
   text-decoration: none;
@@ -82,5 +82,5 @@
 }
 
 .navbar__whatsapp:hover {
-  background-color: #e6c200;
+  background-color: #e0a205;
 }

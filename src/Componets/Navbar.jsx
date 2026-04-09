@@ -11,7 +11,27 @@ const WhatsAppIcon = () => (
 export default function Navbar() {
   const [active, setActive] = useState("Inicio");
 
-  const links = ["Inicio", "Carta", "Nosotros"];
+  const links = [
+    { label: "Inicio", sectionId: "hero-section" },
+    { label: "Carta", sectionId: "carta" },
+    { label: "Nosotros", sectionId: "nosotros" },
+  ];
+
+  const handleNavClick = (label, sectionId) => {
+    setActive(label);
+
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+
+    const navbar = document.querySelector(".navbar");
+    const navbarHeight = navbar ? navbar.offsetHeight : 0;
+    const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+      top: sectionTop - navbarHeight,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <nav className="navbar">
@@ -19,13 +39,13 @@ export default function Navbar() {
 
       <ul className="navbar__links">
         {links.map((link) => (
-          <li key={link}>
+          <li key={link.label}>
             <button
-              onClick={() => setActive(link)}
-              className={`navbar__link ${active === link ? "navbar__link--active" : ""}`}
+              onClick={() => handleNavClick(link.label, link.sectionId)}
+              className={`navbar__link ${active === link.label ? "navbar__link--active" : ""}`}
             >
-              {link}
-              {active === link && <span className="navbar__underline" />}
+              {link.label}
+              {active === link.label && <span className="navbar__underline" />}
             </button>
           </li>
         ))}
