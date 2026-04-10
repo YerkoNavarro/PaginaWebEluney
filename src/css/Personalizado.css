@@ -107,8 +107,8 @@
 }
 
 .pasteleria__card-imagen {
-  width: 120%;
-  height: 160px;
+  width: 100%;
+  height: 180px;
   object-fit: contain;         
   margin-bottom: 1rem;
 }
