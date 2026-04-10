@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../css/Nosotros.css";
+import { useRef } from "react";
 
 const imagenes = [
   "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800",
@@ -25,8 +26,28 @@ const caracteristicas = [
   },
 ];
 
+
+
 export default function Nosotros() {
   const [actual, setActual] = useState(0);
+
+  const touchInicio = useRef(null);
+
+const handleTouchStart = (e) => {
+  touchInicio.current = e.touches[0].clientX;
+};
+
+const handleTouchEnd = (e) => {
+  if (touchInicio.current === null) return;
+  const diferencia = touchInicio.current - e.changedTouches[0].clientX;
+  if (diferencia > 50) {
+    irSiguiente();
+  } else if (diferencia < -50) {
+    irAnterior();
+  }
+
+  touchInicio.current = null;
+};
 
   const irAnterior = () => {
     setActual((prev) => (prev - 1 + imagenes.length) % imagenes.length);
@@ -71,7 +92,10 @@ export default function Nosotros() {
           src={imagenes[actual]}
           alt={`foto ${actual + 1}`}
           className="nosotros__imagen"
+           onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
         />
+       
 
         {/* Botones */}
         <button className="nosotros__btn nosotros__btn--izq" onClick={irAnterior}>

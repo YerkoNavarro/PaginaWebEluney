@@ -12,6 +12,12 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+.navbar__derecha {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 /* Logo */
 .navbar__logo {
   color: #4E342E;
@@ -83,4 +89,93 @@
 
 .navbar__whatsapp:hover {
   background-color: #e0a205;
+}
+
+.navbar__whatsapp-movil-item {
+  display: none;
+}
+
+.navbar__hamburguesa {
+  display: none;
+  background: none;
+  border: none;
+  color: #4E342E;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/*Responsive*/
+
+
+/* Tablet */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar__hamburguesa {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar__derecha > .navbar__whatsapp {
+    display: none;
+  }
+
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background-color: #f5ede4;
+    border-bottom: 1px solid rgba(78, 52, 46, 0.15);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+    padding: 0.5rem 1rem 1rem;
+  }
+
+  .navbar__links--abierto {
+    display: flex;
+  }
+
+  .navbar__link {
+    width: 100%;
+    align-items: flex-start;
+    padding: 0.8rem 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .navbar__underline {
+    bottom: 0;
+    width: 24px;
+  }
+
+  .navbar__whatsapp-movil-item {
+    display: block;
+    margin-top: 0.4rem;
+  }
+
+  .navbar__whatsapp-movil {
+    width: fit-content;
+  }
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+  .navbar__logo {
+    font-size: 1.1rem;
+  }
+
+  .navbar__link {
+    font-size: 0.9rem;
+  }
+
+  .navbar__links {
+    padding: 0.5rem 0.75rem 0.9rem;
+  }
 }

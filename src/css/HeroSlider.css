@@ -25,7 +25,7 @@
 .slider__contenido {
   position: absolute;
   top: 50%;
-  left: 6%;
+  left: 8%;
   transform: translateY(-50%);
   color: white;
   max-width: 500px;
@@ -114,4 +114,72 @@
 .slider_cta:hover {
   background-color: #e0a205;
   transform: scale(1.05);
+}
+
+/*responsive*/
+
+/* Tablet */
+@media (max-width: 768px) {
+  .slider {
+    height: 70vh;
+  }
+
+  .slider__titulo {
+    font-size: 2rem;
+  }
+
+  .slider__subtitulo {
+    font-size: 0.95rem;
+  }
+
+  .slider__contenido {
+    left: 5%;
+    max-width: 80%;
+  }
+
+  .slider_cta {
+    margin-left: 0;
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+
+  .slider__btn {
+    padding: 8px 13px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+  .slider {
+    height: 95vh;
+  }
+
+  .slider__titulo {
+    font-size: 1.5rem;
+  }
+
+  .slider__subtitulo {
+    font-size: 0.85rem;
+  }
+
+  .slider__contenido {
+    left: 4%;
+    max-width: 90%;
+  }
+
+  .slider_cta {
+    margin-left: 0;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+
+  /* Ocultamos botones para cambiar imagen */
+  .slider__btn {
+    display: none;
+  }
+
+  .slider__puntos {
+    bottom: 1rem;
+  }
 }

@@ -10,15 +10,18 @@ const WhatsAppIcon = () => (
 
 export default function Navbar() {
   const [active, setActive] = useState("Inicio");
+  const [menuAbierto, setMenuAbierto] = useState(false);
 
   const links = [
     { label: "Inicio", sectionId: "hero-section" },
     { label: "Carta", sectionId: "carta" },
     { label: "Nosotros", sectionId: "nosotros" },
+    { label: "Servicios", sectionId: "servicios" },
   ];
 
   const handleNavClick = (label, sectionId) => {
     setActive(label);
+    setMenuAbierto(false);
 
     const section = document.getElementById(sectionId);
     if (!section) return;
@@ -35,9 +38,12 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
+
+      {/* LOGO */}
       <div className="navbar__logo">Eluney</div>
 
-      <ul className="navbar__links">
+      {/* LINKS */}
+      <ul className={`navbar__links ${menuAbierto ? "navbar__links--abierto" : ""}`}>
         {links.map((link) => (
           <li key={link.label}>
             <button
@@ -49,17 +55,44 @@ export default function Navbar() {
             </button>
           </li>
         ))}
+
+        <li className="navbar__whatsapp-movil-item">
+          <a
+            href="https://wa.me/tunumero"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navbar__whatsapp navbar__whatsapp-movil"
+            onClick={() => setMenuAbierto(false)}
+          >
+            <WhatsAppIcon />
+            <span>WhatsApp</span>
+          </a>
+        </li>
       </ul>
 
-      <a
-        href="https://wa.me/tunumero"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="navbar__whatsapp"
-      >
-        <WhatsAppIcon />
-        <span>WhatsApp</span>
-      </a>
+      {/* BOTONES derecha — escritorio */}
+      <div className="navbar__derecha">
+        <a
+          href="https://wa.me/tunumero"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="navbar__whatsapp"
+        >
+          <WhatsAppIcon />
+          <span>WhatsApp</span>
+        </a>
+
+        <button
+          className="navbar__hamburguesa"
+          onClick={() => setMenuAbierto((estadoActual) => !estadoActual)}
+          aria-label="Abrir menú"
+          aria-expanded={menuAbierto}
+          type="button"
+        >
+          {menuAbierto ? "✕" : "☰"}
+        </button>
+      </div>
+
     </nav>
   );
 }
