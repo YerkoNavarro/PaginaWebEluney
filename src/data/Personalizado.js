@@ -27,18 +27,30 @@ export const pasteleria = [
     nombre: "Torta de Cumpleaños",
     descripcion: "Personalizada con tu temática y sabor favorito.",
     precio: "Desde $15.000",
-    imagen: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+    imagen: "img/torta.png",
   },
   {
     nombre: "Cupcakes Decorados",
     descripcion: "Docena de cupcakes con decoración a tu gusto.",
     precio: "Desde $8.000",
-    imagen: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400",
+    imagen: "img/cupcakes.png",
   },
   {
     nombre: "Torta de Matrimonio",
     descripcion: "Diseño elegante de múltiples pisos para tu gran día.",
     precio: "Desde $45.000",
-    imagen: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=400",
+    imagen: "img/torta-m.png",
+  },
+  {
+    nombre: "Pie de Limón",
+    descripcion: "Docena de cupcakes con decoración a tu gusto.",
+    precio: "Desde $8.000",
+    imagen: "img/pie.jpg",
+  },
+  {
+    nombre: "Pastel de Chocolate",
+    descripcion: "Diseño elegante de múltiples pisos para tu gran día.",
+    precio: "Desde $45.000",
+    imagen: "img/pastel.png",
   },
 ];

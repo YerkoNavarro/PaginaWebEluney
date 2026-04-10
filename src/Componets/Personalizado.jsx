@@ -44,29 +44,24 @@ export default function Personalizado() {
       {/* PRODUCTOS */}
       <div className="pasteleria__productos">
         {pasteleria.map((producto) => (
-          <div key={producto.nombre} className="pasteleria__card">
-            <img
-              src={producto.imagen}
-              alt={producto.nombre}
-              className="pasteleria__card-imagen"/>
-            <div className="pasteleria__card-info">
-              <h3 className="pasteleria__card-nombre">{producto.nombre}</h3>
-              <p className="pasteleria__card-desc">{producto.descripcion}</p>
-              <div className="pasteleria__card-footer">
-                <span className="pasteleria__card-precio">{producto.precio}</span>
-                <a
-                  href="https://wa.me/tunumero"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="pasteleria__card-btn"
-                >
-                  Pedir por WhatsApp
-                </a>
-              </div>
+          <div key={producto.nombre}>
+            <div className="pasteleria__card">
+              <img
+                src={producto.imagen}
+                alt={producto.nombre}
+                className="pasteleria__card-imagen"/>
             </div>
+            <h3 className="pasteleria__card-nombre">{producto.nombre}</h3>
           </div>
         ))}
       </div>
+               
+                
+              
+           
+         
+     
+  
 
     </section>
   );

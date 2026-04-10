@@ -1,5 +1,5 @@
 .pasteleria {
-  background-color: #fdf8f2;
+  background-color: #FFFFFF;
   padding: 5rem 6rem;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .pasteleria__paso {
-  background-color: #fff;
+  background-color: #f0ebe3;
   border-radius: 16px;
   padding: 2rem 1.5rem;
   text-align: center;
@@ -84,16 +84,22 @@
   display: flex;
   gap: 2rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .pasteleria__card {
-  background-color: #fff;
-  border-radius: 16px;
+   background-color: #f5f0e8;
+  border-radius: 24px;
+  border: none;                /* 👈 quita el borde café */
   overflow: hidden;
   flex: 1;
-  max-width: 340px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  max-width: 220px;
+  box-shadow: none;            /* 👈 quita la sombra */
   transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem 0 1rem;
 }
 
 .pasteleria__card:hover {
@@ -101,57 +107,35 @@
 }
 
 .pasteleria__card-imagen {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  width: 120%;
+  height: 160px;
+  object-fit: contain;         
+  margin-bottom: 1rem;
 }
 
 .pasteleria__card-info {
-  padding: 1.2rem;
+  padding: 0;
+  text-align: center;
+  width: 100%;
 }
 
 .pasteleria__card-nombre {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin: 0 0 0.4rem 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  color: #4E342E;
+  margin: 0 0 0.6rem 0;
+  text-transform: uppercase;   
+  letter-spacing: 1px;
+  text-align: center;
+ margin-top: 2rem;
 }
 
-.pasteleria__card-desc {
-  font-size: 0.88rem;
-  color: #666;
-  line-height: 1.5;
-  margin: 0 0 1rem 0;
-}
 
-.pasteleria__card-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
 
-.pasteleria__card-precio {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #a0522d;
-}
 
-.pasteleria__card-btn {
-  background-color: #f5d000;
-  color: #0f0e0b;
-  padding: 8px 14px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 600;
-  transition: background-color 0.2s;
-  white-space: nowrap;
-}
 
-.pasteleria__card-btn:hover {
-  background-color: #e6c200;
-}
+
 
 
 /*responsive*/
