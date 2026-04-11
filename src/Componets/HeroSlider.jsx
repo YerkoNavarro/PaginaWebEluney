@@ -66,7 +66,7 @@ export default function HeroSlider() {
       <div className="slider__contenido">
         <h1 className="slider__titulo">{slides[actual].title}</h1>
         <p className="slider__subtitulo">{slides[actual].subtitle}</p>
-        <button className="slider_cta">Ver Carta</button>
+        <button className="slider_cta" onClick={() => window.location.href = '#carta'}>Ver Carta</button>
       </div>
 
       {/* BOTONES izquierda / derecha */}
