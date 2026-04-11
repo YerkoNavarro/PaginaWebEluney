@@ -1,5 +1,7 @@
 
 import './App.css'
+import { useState, useEffect } from 'react'
+import { leerDatosyRetornar } from './services/api.js'
 import { Home } from './pages/Home'
 import Recomendados from './Componets/Recomendados'
 import Ubicacion from './Componets/Ubicacion'
