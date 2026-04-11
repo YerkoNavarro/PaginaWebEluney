@@ -21,11 +21,11 @@
   margin: 0 auto;
 }
 
-/* --- Estilos del Encabezado --- */
+/* --- Estilos del Encabezado (Ajustado) --- */
 .header-section {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-end; /* Alinea los elementos al final verticalmente */
   margin-bottom: 30px;
   border-bottom: 2px dashed #E0D4C8;
   padding-bottom: 20px;
@@ -44,6 +44,13 @@
   font-size: 15px;
 }
 
+/* Contenedor para alinear el link y la flecha */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacio entre el link y la flecha */
+}
+
 .ver-menu {
   color: var(--accent-color);
   text-decoration: none;
@@ -56,31 +63,49 @@
   color: var(--accent-hover);
 }
 
-/* --- Estilos de la Lista Horizontal (Cambios aquí) --- */
+/* --- Estilos del Botón de Flecha --- */
+.scroll-arrow {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  padding: 0;
+}
+
+.scroll-arrow:hover {
+  background-color: var(--accent-hover);
+  transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+}
+
+/* --- Estilos del Contenedor de Cards (Ajustado) --- */
 .cards-grid {
-  display: flex;               /* Cambiado de grid a flex */
-  overflow-x: auto;            /* Permite desplazamiento horizontal */
+  display: flex;
+  overflow-x: auto; /* Permite desplazamiento horizontal */
   gap: 24px;
-  padding-bottom: 15px;        /* Espacio para la barra de desplazamiento */
-  scroll-behavior: smooth;     /* Desplazamiento suave */
+  padding-bottom: 15px;
+  scroll-behavior: smooth; /* Asegura desplazamiento suave */
   -webkit-overflow-scrolling: touch; /* Mejor desplazamiento en móviles */
+  
+  /* Ocultar barra de desplazamiento */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
 }
 
-/* Estilización opcional de la barra de desplazamiento para que se vea mejor */
 .cards-grid::-webkit-scrollbar {
-  height: 8px;
-}
-.cards-grid::-webkit-scrollbar-track {
-  background: #E0D4C8;
-  border-radius: 10px;
-}
-.cards-grid::-webkit-scrollbar-thumb {
-  background: var(--accent-color);
-  border-radius: 10px;
+  display: none; /* Chrome, Safari, Opera */
 }
 
+/* --- Estilos de la Card (Mismo diseño, ancho fijo) --- */
 .card {
-  flex: 0 0 280px;            /* No crece, no se encoge, ancho fijo de 280px */
+  flex: 0 0 280px; /* Ancho fijo para que no se encojan */
   background-color: var(--card-bg);
   border-radius: 20px;
   padding: 16px;
@@ -151,7 +176,7 @@
 
 /* --- Botón Eliminado (Cambio aquí) --- */
 .add-btn {
-  display: none; /* Esto oculta el botón por completo */
+  display: none; /* Mantiene el botón oculto */
 }
 
 /* --- Responsive para celulares --- */
