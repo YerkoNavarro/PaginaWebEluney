@@ -1,7 +1,5 @@
-/* Importar fuente */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
-/* Paleta de colores ajustada */
 :root {
   --bg-color: #FFFFFF;
   --card-bg: #F5ECE5;
@@ -15,175 +13,122 @@
 .recomendados-section {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-color);
-  color: var(--text-dark);
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 80px 0;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-/* --- Estilos del Encabezado (Ajustado) --- */
+/* --- Encabezado Centrado y Potente --- */
 .header-section {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end; /* Alinea los elementos al final verticalmente */
-  margin-bottom: 30px;
-  border-bottom: 2px dashed #E0D4C8;
-  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 5%;
 }
 
 .header-text h2 {
-  font-size: 32px;
-  margin: 0 0 8px 0;
-  letter-spacing: -1px;
+  font-size: 52px;
+  font-weight: 800;
   color: var(--text-dark);
+  margin: 0 0 5px 0;
+  letter-spacing: -2px;
 }
 
+/* Arreglo para que el subtítulo sea más negro y llamativo */
 .header-text p {
+  color: #1A0F0D;    /* Negro profundo para más impacto */
+  font-weight: 700;  /* Grosor aumentado para que se note */
+  font-size: 22px;   /* Tamaño más grande y legible */
   margin: 0;
-  color: var(--text-muted);
-  font-size: 15px;
+  font-style: normal; /* Cambiado de italic a normal para más fuerza */
 }
 
-/* Contenedor para alinear el link y la flecha */
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 20px; /* Espacio entre el link y la flecha */
-}
-
-.ver-menu {
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
-  transition: color 0.3s ease;
-}
-
-.ver-menu:hover {
-  color: var(--accent-hover);
-}
-
-/* --- Estilos del Botón de Flecha --- */
-.scroll-arrow {
-  background-color: var(--accent-color);
-  color: white;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s ease, transform 0.2s ease;
-  padding: 0;
-}
-
-.scroll-arrow:hover {
-  background-color: var(--accent-hover);
-  transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
-}
-
-/* --- Estilos del Contenedor de Cards (Ajustado) --- */
+/* --- Configuración de 2 Filas con Scroll --- */
 .cards-grid {
-  display: flex;
-  overflow-x: auto; /* Permite desplazamiento horizontal */
-  gap: 24px;
-  padding-bottom: 15px;
-  scroll-behavior: smooth; /* Asegura desplazamiento suave */
-  -webkit-overflow-scrolling: touch; /* Mejor desplazamiento en móviles */
-  
-  /* Ocultar barra de desplazamiento */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
+  display: grid;
+  grid-template-rows: repeat(2, auto); /* Crea las dos corridas de tarjetas */
+  grid-auto-flow: column;             /* Empuja los elementos hacia la derecha */
+  gap: 32px;
+  padding: 20px 5% 60px 5%;           /* Padding para que las sombras no se corten */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;              /* Oculta scroll en Firefox */
 }
 
 .cards-grid::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;                      /* Oculta scroll en Chrome/Safari */
 }
 
-/* --- Estilos de la Card (Mismo diseño, ancho fijo) --- */
+/* --- Estilo de Tarjetas Pequeñas --- */
 .card {
-  flex: 0 0 280px; /* Ancho fijo para que no se encojan */
+  width: 260px;                       /* Ancho reducido para tarjetas más pequeñas */
   background-color: var(--card-bg);
-  border-radius: 20px;
-  padding: 16px;
+  border-radius: 24px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 20px rgba(62, 39, 35, 0.05);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(62, 39, 35, 0.1);
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(62, 39, 35, 0.15);
+  background-color: #fff;
 }
 
 .card-image {
   width: 100%;
-  height: 200px;
+  height: 180px;                      /* Altura de imagen ajustada al nuevo tamaño */
   object-fit: cover;
-  border-radius: 16px;
-  margin-bottom: 16px;
-  background-color: #fff;
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  border-radius: 20px;
+  margin-bottom: 15px;
 }
 
 .tag {
   align-self: flex-start;
   background-color: var(--accent-color);
   color: white;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 4px 10px;
+  padding: 6px 14px;
   border-radius: 20px;
-  letter-spacing: 0.5px;
   margin-bottom: 12px;
 }
 
 .card-title {
-  font-size: 18px;
-  margin: 0 0 8px 0;
-  font-weight: 600;
+  font-size: 18px;                    /* Título ajustado para tarjetas pequeñas */
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .card-desc {
-  font-size: 13px;
+  font-size: 13px;                    /* Texto más compacto */
   color: var(--text-muted);
-  line-height: 1.5;
-  margin: 0 0 16px 0;
-  flex-grow: 1;
-}
-
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
 
 .price {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 800;
   color: var(--price-color);
 }
 
-/* --- Botón Eliminado (Cambio aquí) --- */
-.add-btn {
-  display: none; /* Mantiene el botón oculto */
-}
+.add-btn { display: none; }           /* Botón '+' oculto */
 
-/* --- Responsive para celulares --- */
+/* --- Adaptación para Móviles --- */
 @media (max-width: 768px) {
-  .header-section {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+  .header-text h2 {
+    font-size: 38px;
+  }
+  
+  .header-text p {
+    font-size: 18px;
   }
 }
