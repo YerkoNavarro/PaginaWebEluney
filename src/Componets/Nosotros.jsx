@@ -12,17 +12,17 @@ const caracteristicas = [
   {
     icono: "🍽️",
     titulo: "Calidad Innegociable",
-    descripcion: "Solo trabajamos con productores locales para asegurar la frescura diaria.",
+    descripcion: "Buenos productos elaborados al momento",
   },
   {
     icono: "❤️",
     titulo: "Servicio con Pasión",
-    descripcion: "Nuestra cocina es abierta porque no tenemos nada que ocultar, solo amor por dar.",
+    descripcion: "Tenemos mesa disponible y un buen ambiente para que disfrutes tu pedido aquí mismo..",
   },
   {
     icono: "🕐",
-    titulo: "Historia y Tradición",
-    descripcion: "Desde 2015 rescatando recetas familiares y dándoles un giro moderno.",
+    titulo: "Trayectoria",
+    descripcion: "Desde 2018 en el negocio de la comida",
   },
 ];
 
@@ -65,11 +65,9 @@ const handleTouchEnd = (e) => {
         <span className="nosotros__etiqueta">NUESTRA ALMA</span>
         <h2 className="nosotros__titulo">Sobre Nosotros</h2>
         <p className="nosotros__parrafo">
-          Eluney nació de una pasión compartida por el fuego del hogar y la
-          precisión de la pastelería. Somos un espacio donde la velocidad del
-          fast food no compromete la calidad artesanal. Cada ingrediente es
-          seleccionado con rigor, cada masa es amasada a mano y cada cliente
-          es tratado como parte de nuestra familia.
+          En Eluney, unimos lo mejor de dos mundos: la delicadeza de la repostería artesanal y la potencia de la sandwichería tradicional.
+          Desde el aroma de nuestras galletas de avena recién horneadas
+          hasta el primer mordisco de un churrasco caliente, trabajamos para ofrecerte sabor real y calidad en cada pedido.
         </p>
 
         {/* Lista de características */}

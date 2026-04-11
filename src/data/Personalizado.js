@@ -10,15 +10,10 @@ export const pasos = [
   {
     numero: "02",
     titulo: "Nosotros creamos",
-    descripcion: "Nuestros pasteleros artesanales dan vida a tu pedido.",
+    descripcion: "",
     icono:  "ChefHat",
   },
-  {
-    numero: "03",
-    titulo: "Recíbelo listo",
-    descripcion: "Retira en tienda o coordinamos entrega a domicilio.",
-    icono: "PackageCheck",
-  },
+  
 ];
 
 

@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-column">
           <h3 className="footer-logo">Café Eluney</h3>
           <p className="footer-description">
-            Pasión por el café de especialidad y la pastelería artesanal en el corazón de Viña del Mar.
+            
           </p>
           <div className="footer-socials">
             <a href="#" aria-label="Instagram"><FaInstagram /></a>
@@ -41,13 +41,13 @@ const Footer = () => {
         {/* Columna 4: Horarios */}
         <div className="footer-column">
           <h4>Horarios</h4>
-          <p>Lunes a Sabado: 08:00 - 20:00</p>
-          <p>Domingo: Cerrado</p>
+          <p>Lunes a Viernes: 09:00 - 20:00</p>
+          <p>Sábado y Domingo: Cerrado</p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2026 Café Eluney - Todos los derechos reservados.</p>
+        <p>&copy; 2026 Café Eluney.</p>
       </div>
     </footer>
   );

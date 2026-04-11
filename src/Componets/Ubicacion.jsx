@@ -28,7 +28,7 @@ const Ubicacion = () => {
         </div>
         <div className="info-item">
           <strong>Horario:</strong>
-          <span>Lunes a Sábado: 08:00 - 20:00</span>
+          <span>Lunes a Viernes: 09:00 - 20:00</span>
         </div>
       </div>
     </section>

@@ -22,7 +22,8 @@ function App() {
     <Navbar/>
     <Home rows={rows}/>
     <Recomendados/>
-    
+    <Ubicacion/>
+    <Footer/>
     </>
    
   )
