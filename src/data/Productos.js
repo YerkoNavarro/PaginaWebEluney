@@ -31,4 +31,37 @@ export const productos = [
     precio: '$15.500',
     imagen: 'https://images.unsplash.com/photo-1562777717-b6aff3af1b12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
   },
+  {
+    id: 6,
+    etiqueta: 'Pastelería',
+    titulo: 'Muffin de Arándanos',
+    descripcion: 'Muffin artesanal horneado con frutos silvestres.',
+    precio: '$2.800',
+    imagen: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=500',
+  },
+  {
+    id: 7,
+    etiqueta: 'Tentación',
+    titulo: 'Brownie con Helado',
+    descripcion: 'Brownie tibio con nueces y una bola de vainilla.',
+    precio: '$4.200',
+    imagen: 'https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=500',
+  },
+  {
+    id: 8,
+    etiqueta: 'Nuevo',
+    titulo: 'Sándwich Gourmet',
+    descripcion: 'Pan de masa madre, jamón serrano y queso mantecoso.',
+    precio: '$7.900',
+    imagen: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=500',
+  },
+   {
+    id: 8,
+    etiqueta: 'Nuevo',
+    titulo: 'Sándwich Gourmet',
+    descripcion: 'Pan de masa madre, jamón serrano y queso mantecoso.',
+    precio: '$7.900',
+    imagen: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=500',
+  },
+
 ];

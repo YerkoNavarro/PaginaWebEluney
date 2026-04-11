@@ -2,6 +2,8 @@
 import './App.css'
 import { Home } from './pages/Home'
 import Recomendados from './Componets/Recomendados'
+import Ubicacion from './Componets/Ubicacion'
+import Footer from './Componets/Footer'
 import Navbar from './Componets/Navbar'
 
 import { useEffect, useState } from 'react';
@@ -22,6 +24,7 @@ function App() {
     <Recomendados/>
     
     </>
+   
   )
 }
 
