@@ -5,7 +5,7 @@ import "../css/HeroSlider.css";
 const slides = [
   {
     id: 1,
-    image: "img/desayuno.png",
+    image: "img/portada-3.webp",
     title: "Tu comida favorita",
     subtitle: "Desde hamburguesas jugosas hasta pastelería fina.",
   },
@@ -17,7 +17,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=1400",
+    image: "img/pasteleria.webp",
     title: "Postres únicos",
     subtitle: "El dulce final que mereces cada día.",
   },

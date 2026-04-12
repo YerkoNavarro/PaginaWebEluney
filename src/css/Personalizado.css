@@ -41,7 +41,7 @@
   font-weight: 700;
   color: var(--pasteleria-text-dark);
   margin: 0.5rem 0 1rem 0;
-  transform: translateX(100px);
+  transform: translateX(150px);
  
 }
 
@@ -50,7 +50,7 @@
   font-size: 1rem;
   color: #5b3d2e;
   line-height: 1.5;
-  transform: translateX(100px);
+  transform: translateX(150px);
 }
 
 /* ── PASOS ── */
@@ -103,8 +103,8 @@
 /* ── BANNER ── */
 .pasteleria__banner {
   position: relative;
-  width: calc(100% + 12rem); /* 👈 compensa el padding de la sección */
-  margin-left: -6rem;        /* 👈 compensa el padding izquierdo */
+  width: 100%;
+  margin-left: 0;
   height: 471px;
   overflow: hidden;
 }
@@ -136,8 +136,8 @@
 /* Responsive banner */
 @media (max-width: 768px) {
   .pasteleria__banner {
-    width: calc(100% + 4rem);
-    margin-left: -2rem;
+    width: 100%;
+    margin-left: 0;
     height: 200px;
   }
 
@@ -148,8 +148,8 @@
 
 @media (max-width: 480px) {
   .pasteleria__banner {
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
+    width: 100%;
+    margin-left: 0;
     height: 160px;
   }
 

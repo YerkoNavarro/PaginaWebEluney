@@ -62,7 +62,7 @@
 .nosotros__etiqueta {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #40E0D0;
+  color: #2ea095;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -111,7 +111,7 @@
 }
 
 .nosotros__icono {
-  background: #40E0D0;
+  background: #2ea095;
   color: white;
   width: 42px;
   height: 42px;
