@@ -4,7 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import { Home } from './pages/Home'
-import Recomendados from './Componets/Recomendados'
+import Footer from './Componets/Footer'
+import Navbar from './Componets/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,10 +14,7 @@ function App() {
     <>
     <Navbar/>
     <Home/>
-    <Recomendados/>
-      
-       <Ubicacion/>
-       <Footer/>
+    <Footer/>
     </>
    
   )
