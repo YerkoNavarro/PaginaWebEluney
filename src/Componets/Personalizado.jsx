@@ -41,7 +41,19 @@ export default function Personalizado() {
         </div>
       </div>
 
-      {/* PRODUCTOS */}
+      {/* IMAGEN BANNER — ocupa todo el ancho */}
+      <div className="pasteleria__banner">
+        <img
+          src="img/pasteleria.webp"
+          alt="Pastelería Eluney"
+          className="pasteleria__banner-imagen"
+        />
+        <div className="pasteleria__banner-overlay">
+          <p className="pasteleria__banner-texto">Hecho con amor, entregado con pasión</p>
+        </div>
+      </div>
+
+      
       
                
                 
