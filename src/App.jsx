@@ -6,6 +6,13 @@ import { Home } from './pages/Home'
 import Footer from './Componets/Footer'
 import Navbar from './Componets/Navbar'
 
+
+
+import { useEffect, useState } from 'react';
+import { leerDatosyRetornar } from './services/api';
+
+
+
 function App() {
   
   const [rows, setRows] = useState([]);
@@ -17,8 +24,13 @@ function App() {
   return (
     <>
     <Navbar/>
+
+
     <Home/>
     <Footer/>
+
+ 
+    
     </>
    
   )
