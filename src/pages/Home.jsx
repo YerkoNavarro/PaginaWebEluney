@@ -3,6 +3,7 @@ import Nosotros from "../Componets/Nosotros";
 import Personalizado from "../Componets/Personalizado";
 import Recomendados from "../Componets/Recomendados";
 import Ubicacion from "../Componets/Ubicacion";
+import Menu from "../Componets/Carta";
 
 
 export const Home = ({rows}) => {
@@ -14,6 +15,10 @@ export const Home = ({rows}) => {
 
             <section id="recomendados">
                 <Recomendados />
+            </section>
+
+            <section id="Menú">
+                <Menu rows={rows} />
             </section>
 
              <section id="servicios">

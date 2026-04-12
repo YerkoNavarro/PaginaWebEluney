@@ -8,8 +8,7 @@ import Navbar from './Componets/Navbar'
 
 
 
-import { useEffect, useState } from 'react';
-import { leerDatosyRetornar } from './services/api';
+
 
 
 
@@ -26,7 +25,7 @@ function App() {
     <Navbar/>
 
 
-    <Home/>
+    <Home rows={rows} />
     <Footer/>
 
  
