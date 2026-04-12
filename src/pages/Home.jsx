@@ -5,7 +5,7 @@ import Recomendados from "../Componets/Recomendados";
 import Ubicacion from "../Componets/Ubicacion";
 
 
-export const Home = () => {
+export const Home = ({rows}) => {
     return (
         <div className="home-page">
             <section id="hero-section">
