@@ -7,8 +7,7 @@
 
 .ubicacion-section .header-text {
   margin-bottom: 30px;
-  /* Reutilizamos el estilo de tu h2 de Recomendados */
-  border-left: 6px solid var(--accent-color);
+  border-left: 6px solid #d4a574;
   padding-left: 20px;
 }
 
@@ -44,7 +43,7 @@
 }
 
 .info-item strong {
-  color: var(--accent-color);
+  color: #8b6f47;
   font-size: 18px;
   margin-bottom: 5px;
 }

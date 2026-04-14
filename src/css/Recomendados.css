@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
 :root {
-  --bg-color: #FFFFFF;
-  --card-bg: #F5ECE5;
-  --text-dark: #3E2723;
-  --text-muted: #5D4037;
-  --accent-color: #6D4C41;
-  --accent-hover: #4E342E;
-  --price-color: #8D6E63;
+  --bg-color: #faf7f2;
+  --card-bg: #f5f1e8;
+  --text-dark: #1f1410;
+  --text-muted: #6b5344;
+  --accent-color: #8b6f47;
+  --accent-hover: #3d2416;
+  --price-color: #8b6f47;
 }
 
 .recomendados-section {
@@ -39,7 +39,7 @@
 }
 
 .header-text p {
-  color: #1A0F0D;
+  color: #8b6f47;
   font-weight: 700;
   font-size: 22px;
   margin: 0;

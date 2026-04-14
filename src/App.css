@@ -1,5 +1,8 @@
 .color{
-    --beige: #F5F5DC;
-    --turquesa: #40E0D0;
-    --cafe: #3C2F2F;
+    --cream: #f5f1e8;
+    --cream-light: #faf7f2;
+    --coffee-dark: #1f1410;
+    --coffee-medium: #3d2416;
+    --coffee-warm: #8b6f47;
+    --coffee-accent: #d4a574;
 }
