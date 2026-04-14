@@ -1,7 +1,9 @@
 import HeroSlider from "../Componets/HeroSlider";
 import Nosotros from "../Componets/Nosotros";
 import Personalizado from "../Componets/Personalizado";
-import Carta from "../Componets/Carta";
+import Recomendados from "../Componets/Recomendados";
+import Ubicacion from "../Componets/Ubicacion";
+import Menu from "../Componets/Carta";
 
 
 export const Home = ({rows}) => {
@@ -10,8 +12,13 @@ export const Home = ({rows}) => {
             <section id="hero-section">
                 <HeroSlider />
             </section>
-            <section id="carta">
-                <Carta rows={rows}/>
+
+            <section id="recomendados">
+                <Recomendados />
+            </section>
+
+            <section id="Menú">
+                <Menu rows={rows} />
             </section>
 
              <section id="servicios">
@@ -20,6 +27,10 @@ export const Home = ({rows}) => {
 
             <section id="nosotros">
                 <Nosotros />
+            </section>
+
+            <section id="ubicacion">
+                <Ubicacion />
             </section>
             
         </div>

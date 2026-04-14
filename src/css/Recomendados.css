@@ -38,34 +38,32 @@
   letter-spacing: -2px;
 }
 
-/* Arreglo para que el subtítulo sea más negro y llamativo */
 .header-text p {
-  color: #1A0F0D;    /* Negro profundo para más impacto */
-  font-weight: 700;  /* Grosor aumentado para que se note */
-  font-size: 22px;   /* Tamaño más grande y legible */
+  color: #1A0F0D;
+  font-weight: 700;
+  font-size: 22px;
   margin: 0;
-  font-style: normal; /* Cambiado de italic a normal para más fuerza */
+  font-style: normal;
 }
 
-/* --- Configuración de 2 Filas con Scroll --- */
+/* --- Configuración de 1 FILA (4 Productos) --- */
 .cards-grid {
   display: grid;
-  grid-template-rows: repeat(2, auto); /* Crea las dos corridas de tarjetas */
-  grid-auto-flow: column;             /* Empuja los elementos hacia la derecha */
-  gap: 32px;
-  padding: 20px 5% 60px 5%;           /* Padding para que las sombras no se corten */
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;              /* Oculta scroll en Firefox */
+  /* Creamos exactamente 4 columnas de igual tamaño */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 25px;
+  padding: 20px 5% 60px 5%;
+  /* Centramos el grid en la pantalla */
+  justify-content: center;
+  /* Ya no necesitamos scroll si solo son 4 */
+  overflow-x: hidden; 
 }
 
-.cards-grid::-webkit-scrollbar {
-  display: none;                      /* Oculta scroll en Chrome/Safari */
-}
-
-/* --- Estilo de Tarjetas Pequeñas --- */
+/* --- Estilo de Tarjetas --- */
 .card {
-  width: 260px;                       /* Ancho reducido para tarjetas más pequeñas */
+  /* Quitamos el width fijo de 260px para que el grid maneje el tamaño */
+  width: 100%; 
+  max-width: 280px; 
   background-color: var(--card-bg);
   border-radius: 24px;
   padding: 15px;
@@ -73,6 +71,7 @@
   flex-direction: column;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   box-shadow: 0 10px 20px rgba(62, 39, 35, 0.05);
+  margin: 0 auto; /* Asegura que la card esté centrada en su columna */
 }
 
 .card:hover {
@@ -83,7 +82,7 @@
 
 .card-image {
   width: 100%;
-  height: 180px;                      /* Altura de imagen ajustada al nuevo tamaño */
+  height: 180px;
   object-fit: cover;
   border-radius: 20px;
   margin-bottom: 15px;
@@ -102,13 +101,13 @@
 }
 
 .card-title {
-  font-size: 18px;                    /* Título ajustado para tarjetas pequeñas */
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 6px;
 }
 
 .card-desc {
-  font-size: 13px;                    /* Texto más compacto */
+  font-size: 13px;
   color: var(--text-muted);
   line-height: 1.4;
   margin-bottom: 20px;
@@ -120,9 +119,16 @@
   color: var(--price-color);
 }
 
-.add-btn { display: none; }           /* Botón '+' oculto */
+.add-btn { display: none; }
 
-/* --- Adaptación para Móviles --- */
+/* --- Adaptación para Móviles (Muy importante) --- */
+@media (max-width: 1024px) {
+  .cards-grid {
+    /* En tablets mostramos 2 por fila */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .header-text h2 {
     font-size: 38px;
@@ -130,5 +136,11 @@
   
   .header-text p {
     font-size: 18px;
+  }
+
+  .cards-grid {
+    /* En celulares 1 sola fila de arriba a abajo */
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

@@ -3,9 +3,10 @@ import "../css/Nosotros.css";
 import { useRef } from "react";
 
 const imagenes = [
-  "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800",
-  "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
-  "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+  "img/local-1.JPG",
+  "img/local-2.JPG",
+  "img/local-3.JPG  ",
+  "img/local-4.JPG",
 ];
 
 const caracteristicas = [

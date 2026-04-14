@@ -1,13 +1,16 @@
 
 import './App.css'
+import { useState, useEffect } from 'react'
+import { leerDatosyRetornar } from './services/api.js'
 import { Home } from './pages/Home'
-import Recomendados from './Componets/Recomendados'
-import Ubicacion from './Componets/Ubicacion'
 import Footer from './Componets/Footer'
 import Navbar from './Componets/Navbar'
 
-import { useEffect, useState } from 'react';
-import { leerDatosyRetornar } from './services/api';
+
+
+
+
+
 
 function App() {
   
@@ -20,10 +23,13 @@ function App() {
   return (
     <>
     <Navbar/>
-    <Home rows={rows}/>
-    <Recomendados/>
-    <Ubicacion/>
+
+
+    <Home rows={rows} />
     <Footer/>
+
+ 
+    
     </>
    
   )
