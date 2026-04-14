@@ -1,14 +1,14 @@
 .nosotros {
-  --nosotros-accent: #a0522d;
-  --nosotros-accent-soft: #d88956;
-  --nosotros-surface: #fff8f3;
-  --nosotros-border: #f0d7c5;
+  --nosotros-accent: #8b6f47;
+  --nosotros-accent-soft: #d4a574;
+  --nosotros-surface: #f5f1e8;
+  --nosotros-border: #e8d9c8;
   position: relative;
   display: flex;
   align-items: center;
   gap: 4rem;
   padding: 5rem 6rem;
-  background-color: #3E2723;
+  background-color: #3d2416;
   justify-content: flex-end;
   overflow: hidden;
 }
@@ -62,7 +62,7 @@
 .nosotros__etiqueta {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #2ea095;
+  color: #d4a574;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -72,7 +72,7 @@
   display: inline-block;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #3d2416;
   margin: 0.4rem 0 1rem 0;
 }
 
@@ -88,7 +88,7 @@
 
 .nosotros__parrafo {
   font-size: 0.95rem;
-  color: #444;
+  color: #8b6f47;
   line-height: 1.7;
   max-width: 420px;
   margin-bottom: 2rem;
@@ -111,8 +111,8 @@
 }
 
 .nosotros__icono {
-  background: #2ea095;
-  color: white;
+  background: #d4a574;
+  color: #1f1410;
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -126,13 +126,13 @@
 .nosotros__item-titulo {
   font-size: 1rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #8b6f47;
   margin: 0 0 0.2rem 0;
 }
 
 .nosotros__item-desc {
   font-size: 0.88rem;
-  color: #555;
+  color: #d0a06a;
   margin: 0;
   line-height: 1.5;
 }

@@ -17,7 +17,7 @@ export const Home = ({rows}) => {
                 <Recomendados />
             </section>
 
-            <section id="Menú">
+            <section id="carta">
                 <Menu rows={rows} />
             </section>
 

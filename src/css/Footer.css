@@ -1,6 +1,6 @@
 .footer-container {
-  background-color: #3E2723; /* El café más oscuro para el fondo */
-  color: #F5ECE5;            /* El crema suave para los textos */
+  background-color: #3d2416;
+  color: #f5f1e8;
   padding: 80px 5% 30px 5%;
   font-family: 'Inter', sans-serif;
   margin-top: 60px;
@@ -38,8 +38,8 @@
 }
 
 .footer-socials a {
-  color: #3E2723;
-  background-color: #F5ECE5;
+  color: #1f1410;
+  background-color: #d4a574;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -51,8 +51,8 @@
 }
 
 .footer-socials a:hover {
-  background-color: #8D6E63;
-  color: white;
+  background-color: #f5f1e8;
+  color: #1f1410;
   transform: translateY(-3px);
 }
 
@@ -61,7 +61,7 @@
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 25px;
-  color: #8D6E63; /* Café claro para resaltar títulos */
+  color: #d4a574;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -77,14 +77,14 @@
 }
 
 .footer-column ul li a {
-  color: #F5ECE5;
+  color: #f5f1e8;
   text-decoration: none;
   font-size: 15px;
   transition: color 0.3s ease;
 }
 
 .footer-column ul li a:hover {
-  color: #8D6E63;
+  color: #d4a574;
 }
 
 .footer-column p {

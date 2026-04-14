@@ -1,13 +1,13 @@
 .pasteleria {
-  --pasteleria-panel: #5a392f;
-  --pasteleria-panel-strong: #4a2f27;
-  --pasteleria-accent: #cf7b3a;
-  --pasteleria-accent-soft: #f6cda3;
-  --pasteleria-text-dark: #2f1d16;
-  --pasteleria-text-light: #fff7ef;
-  background: #ffffff;
-  padding-top: 8rem ;
-  border: solid 3px red;
+  --pasteleria-panel: #3d2416;
+  --pasteleria-panel-strong: #1f1410;
+  --pasteleria-accent: #d4a574;
+  --pasteleria-accent-soft: #e8d9c8;
+  --pasteleria-text-dark: #1f1410;
+  --pasteleria-text-light: #f5f1e8;
+  background: #faf7f2;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
 }
 
 .pasteleria__intro {

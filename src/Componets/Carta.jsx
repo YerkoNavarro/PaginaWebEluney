@@ -46,23 +46,25 @@ export default function Menu({ rows }) {
   const filtered = categories.filter((c) => c.items.length > 0);
 
   return (
-    <div className="menu">
-      <h1 className="menu__title">Menú</h1>
-      <div className="menu__grid">
-        {filtered.map((cat) => (
-          <div key={cat.name} className="menu__category">
-            <h2 className="menu__category-name">{cat.name}</h2>
-            <ul className="menu__list">
-              {cat.items.map((item) => (
-                <li key={item.name} className="menu__item">
-                  <span className="menu__item-name">{item.name}</span>
-                  <span className="menu__item-dots" />
-                  <span className="menu__item-price">${item.price.toLocaleString('es-CL')}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+    <div className="carta-container">
+      <div className="menu">
+        <h1 className="menu__title">Menú</h1>
+        <div className="menu__grid">
+          {filtered.map((cat) => (
+            <div key={cat.name} className="menu__category">
+              <h2 className="menu__category-name">{cat.name}</h2>
+              <ul className="menu__list">
+                {cat.items.map((item) => (
+                  <li key={item.name} className="menu__item">
+                    <span className="menu__item-name">{item.name}</span>
+                    <span className="menu__item-dots" />
+                    <span className="menu__item-price">${item.price.toLocaleString('es-CL')}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
