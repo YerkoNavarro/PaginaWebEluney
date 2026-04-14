@@ -1,22 +1,22 @@
 .menu-section {
   width: 100%;
   padding: 4.5rem 1.25rem;
-  background: linear-gradient(180deg, #f5f1e8 0%, #faf7f2 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #faf7f2 100%);
 }
 
 .carta-container {
   width: 100%;
   background: transparent;
   padding: 6rem 0;
-  background-color:#3d2416;
+  background-color: #ffffff;
 }
 
 .menu {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', sans-serif;
   max-width: 720px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
-  background: #faf7f2;
+  background: #fafafa;
   border-radius: 12px;
   border: 1px solid rgba(31, 20, 16, 0.08);
 }
@@ -28,6 +28,7 @@
   margin: 0 0 1.5rem;
   text-align: center;
   letter-spacing: 0.02em;
+  font-family: 'Inter', sans-serif;
 }
 
 .menu__grid {

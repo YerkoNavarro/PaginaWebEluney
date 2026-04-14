@@ -5,7 +5,7 @@
   --pasteleria-accent-soft: #e8d9c8;
   --pasteleria-text-dark: #1f1410;
   --pasteleria-text-light: #f5f1e8;
-  background: #faf7f2;
+  background: #fae9dd;
   padding-top: 8rem;
   padding-bottom: 6rem;
 }
@@ -42,6 +42,7 @@
   color: var(--pasteleria-text-dark);
   margin: 0.5rem 0 1rem 0;
   transform: translateX(150px);
+  font-family: 'Inter', sans-serif;
  
 }
 
@@ -96,6 +97,7 @@
   font-weight: 700;
   color: #2f3f45;
   margin: 0;
+  font-family: 'Inter', sans-serif;
   
 }
 
@@ -131,6 +133,7 @@
   font-weight: 700;
   letter-spacing: 1px;
   text-align: center;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Responsive banner */

@@ -4,16 +4,18 @@ import "../css/HeroSlider.css";
 
 const slides = [
   {
+    
     id: 1,
-    image: "img/portada-3.webp",
-    title: "Tu comida favorita",
-    subtitle: "Desde hamburguesas jugosas hasta pastelería fina.",
+    image: "img/IMG_7113.JPG",
+    title: "Eluney Cafeteria",
+    subtitle: "Bienvenidos",
+    
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1400",
-    title: "Pizza artesanal",
-    subtitle: "Hecha con ingredientes frescos y amor casero.",
+    image: "img/portada-3.webp",
+    title: "Tu comida favorita",
+    subtitle: "Desde completos hasta pastelería.",
   },
   {
     id: 3,

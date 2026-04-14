@@ -1,8 +1,8 @@
 .nosotros {
-  --nosotros-accent: #8b6f47;
-  --nosotros-accent-soft: #d4a574;
-  --nosotros-surface: #f5f1e8;
-  --nosotros-border: #e8d9c8;
+  
+  --nosotros-accent-soft: #ffffff;
+  --nosotros-surface: #ffffff;
+  --nosotros-border: #ffffff;
   position: relative;
   display: flex;
   align-items: center;
@@ -21,50 +21,19 @@
   pointer-events: none;
 }
 
-.nosotros::before {
-  width: 280px;
-  height: 280px;
-  right: -120px;
-  top: -90px;
-  background: radial-gradient(circle, rgba(208, 132, 79, 0.2) 0%, rgba(208, 132, 79, 0) 70%);
-}
 
-.nosotros::after {
-  width: 240px;
-  height: 240px;
-  left: -110px;
-  bottom: -120px;
-  background: radial-gradient(circle, rgba(160, 82, 45, 0.14) 0%, rgba(160, 82, 45, 0) 72%);
-}
 
-.nosotros__texto {
-  position: relative;
-  z-index: 2;
-  background: linear-gradient(180deg, #ffffff 0%, var(--nosotros-surface) 100%);
-  border: 1px solid var(--nosotros-border);
-  border-radius: 22px;
-  box-shadow: 0 14px 30px rgba(86, 48, 30, 0.08);
-  padding: 2.1rem;
-}
 
-.nosotros__texto::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 22px 22px 0 0;
-  background: linear-gradient(90deg, var(--nosotros-accent) 0%, var(--nosotros-accent-soft) 60%, #f1c8aa 100%);
-}
+
 
 /* ── COLUMNA IZQUIERDA ── */
 .nosotros__etiqueta {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #d4a574;
+  color: #ffffff;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
 }
 
 .nosotros__titulo {
@@ -72,26 +41,21 @@
   display: inline-block;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #3d2416;
+  color: #ffffff;
   margin: 0.4rem 0 1rem 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.nosotros__titulo::after {
-  content: "";
-  display: block;
-  width: 58%;
-  height: 4px;
-  margin-top: 0.35rem;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--nosotros-accent) 0%, rgba(160, 82, 45, 0.2) 100%);
-}
+
+
 
 .nosotros__parrafo {
   font-size: 0.95rem;
-  color: #8b6f47;
+  color: #ffffff;
   line-height: 1.7;
   max-width: 420px;
   margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Lista */
@@ -126,8 +90,9 @@
 .nosotros__item-titulo {
   font-size: 1rem;
   font-weight: 700;
-  color: #8b6f47;
+  color: #ffd08e;
   margin: 0 0 0.2rem 0;
+  font-family: 'Inter', sans-serif;
 }
 
 .nosotros__item-desc {
@@ -135,6 +100,7 @@
   color: #d0a06a;
   margin: 0;
   line-height: 1.5;
+  font-family: 'Inter', sans-serif;
 }
 
 /* ── COLUMNA DERECHA: SLIDER ── */

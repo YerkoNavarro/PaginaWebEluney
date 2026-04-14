@@ -20,7 +20,7 @@ export default function Personalizado() {
           <h2 className="pasteleria__titulo">Pastelería Personalizada</h2>
           <p className="pasteleria__subtitulo">
             Creamos el dulce perfecto para tu momento especial.
-            Cada pedido es único, hecho con amor y dedicación artesanal.
+            Pedidos personalizados por encargo.
           </p>
         </div>
 
@@ -41,18 +41,7 @@ export default function Personalizado() {
         </div>
       </div>
 
-      {/* IMAGEN BANNER — ocupa todo el ancho */}
-      <div className="pasteleria__banner">
-        <img
-          src="img/pasteleria.webp"
-          alt="Pastelería Eluney"
-          className="pasteleria__banner-imagen"
-        />
-        <div className="pasteleria__banner-overlay">
-          <p className="pasteleria__banner-texto">Hecho con amor, entregado con pasión</p>
-        </div>
-      </div>
-
+      
       
       
                
