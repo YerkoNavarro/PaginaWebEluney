@@ -1,4 +1,4 @@
-import HeroSlider from "../Componets/HeroSlider";
+import HeroSection from "../Componets/HeroSection";
 import Nosotros from "../Componets/Nosotros";
 import Personalizado from "../Componets/Personalizado";
 import Recomendados from "../Componets/Recomendados";
@@ -10,7 +10,7 @@ export const Home = ({rows}) => {
     return (
         <div className="home-page">
             <section id="hero-section">
-                <HeroSlider />
+                <HeroSection />
             </section>
 
             <section id="recomendados">
