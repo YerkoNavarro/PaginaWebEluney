@@ -63,7 +63,7 @@ const handleTouchEnd = (e) => {
 
       {/* COLUMNA IZQUIERDA: texto */}
       <div className="nosotros__texto">
-        <span className="nosotros__etiqueta">NUESTRA ALMA</span>
+        
         <h2 className="nosotros__titulo">Sobre Nosotros</h2>
         <p className="nosotros__parrafo">
           En Eluney, unimos lo mejor de dos mundos: la delicadeza de la repostería artesanal y la potencia de la sandwichería tradicional.

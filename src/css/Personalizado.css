@@ -17,13 +17,15 @@
   gap: 2.5rem;
   margin-bottom: 3.4rem;
   height: 200px;
+  margin: 0 auto 3.4rem auto; /* PARA CENTRAR */
+  max-width: 1000px; /**/
 }
 
 /* ── ENCABEZADO ── */
 .pasteleria__header {
   text-align: center;
   max-width: 430px;
-  margin: 0 0 0 auto;
+  margin: 0;
   padding-top: 0;
 }
 
@@ -41,7 +43,7 @@
   font-weight: 700;
   color: var(--pasteleria-text-dark);
   margin: 0.5rem 0 1rem 0;
-  transform: translateX(150px);
+  
   font-family: 'Inter', sans-serif;
  
 }
@@ -51,7 +53,7 @@
   font-size: 1rem;
   color: #5b3d2e;
   line-height: 1.5;
-  transform: translateX(150px);
+  
 }
 
 /* ── PASOS ── */
@@ -61,7 +63,7 @@
   gap: 2rem;
   margin-bottom: 0;
   flex-wrap: wrap;
-  transform: translateX(-100px);
+  
 }
 
 .pasteleria__paso {
